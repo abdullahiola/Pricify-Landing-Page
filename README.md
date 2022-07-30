@@ -1,1 +1,2 @@
-# Pricify-Landing-Page
+## Link to Pricify Landing Page
+ > [Pricify]()
