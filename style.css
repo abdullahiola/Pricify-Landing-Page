@@ -286,7 +286,7 @@ article {
   align-items: center;
   justify-content: space-between;
   border-radius: 0.4em;
-  background-image: url("/images/Union\ \(4\).png");
+  background-image: url("images/Union\ \(4\).png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 0%;
@@ -495,7 +495,7 @@ hr {
 }
 .phone-img {
   width: 100%;
-  background-image: url("/images/iphone12.webp");
+  background-image: url("images/iphone12.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: var(--light-text);
@@ -568,11 +568,11 @@ hr {
 }
 
 .new-products .phone-img {
-  background-image: url('/images/iphone12_ProMax.webp');
+  background-image: url('images/iphone12_ProMax.webp');
 }
 
 .trending .phone-img{
-  background-image: url('/images/iphone12.jpg');
+  background-image: url('images/iphone12.jpg');
 }
 
 
