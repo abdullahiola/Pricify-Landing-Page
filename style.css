@@ -145,20 +145,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rgba (0,0,0,0);
+  border: 1px solid rgba(0,0,0,0);
   padding-block: 0.3em;
   padding-inline: 0.45em;
-}
-.header-nav a:first-child {
-  border: 1px solid var(--btn-blue);
-  border-radius: 0.45em;
 }
 .header-nav a>div {
   display: flex;
   align-items: center;
 }
 .header-nav a:hover, .header-nav a:focus {
-  border-bottom: 1px solid var(--btn-blue);
+  border: 2px solid var(--btn-blue);
+  border-radius: 0.4em;
+  font-weight: 600;
+}
+.header-nav a:first-child {
+  border: 2px solid var(--btn-blue);
+  border-radius: 0.4em;
 }
 .caret-down {
   cursor: pointer;
@@ -167,7 +169,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rgba (0,0,0,0);
+  border: 2px solid rgba(0,0,0,0);
   padding-block: 0.3em;
   padding-inline: 0.3em;
 }
@@ -175,8 +177,10 @@ header {
   display: flex;
   align-items: center;
 }
-.header-profile .profile-icon:hover, .header-profile .profile-icon:focus {
-  border-bottom: 1px solid var(--btn-blue);
+.header-profile #view:hover, .header-profile #view:focus {
+  border: 2px solid var(--btn-blue);
+  border-radius: 0.4em;
+  font-weight: 600;
 }
 .header-profile {
   position: relative;
@@ -187,7 +191,8 @@ header {
   border: 1px solid inherit;
   width: 70%;
   margin-inline-start: 30%;
-  display: none;
+  margin-block-start: 0.5em;
+  /* display: none; */
 }
 #toggleCard a {
   display: block;
