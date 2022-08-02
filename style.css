@@ -63,7 +63,6 @@ body {
   line-height: 1.5;
 }
 header {
-  position: relative;
   padding-block-end: 1.5em;
   min-height: 100vh;
   background: linear-gradient(180deg, #94AFF4 52.92%, #FFFFFF 102.5%);
@@ -78,12 +77,11 @@ footer {
   background: var(--footer-color);
   color: var(--light-text);
 }
-
-/* header */
-.bg {
+/* .bg {
   position: absolute;
-  z-index: -1;
   filter: saturate(100%) brightness(200%);
+  opacity: 1;
+  /* z-index: 1;
 }
 .bg img {
   width: 50%;
@@ -92,25 +90,27 @@ footer {
   width: 60%;
   left: 25%;
 }
-/* #bg-img2 {
-  border: 2px solid black;
-  width: 40%;
-  bottom: -50%;
-} */
 #bg-img3 img {
   width: 100%;
 }
 #bg-img3 {
   width: 30%;
   right: 3%;
-  top: -5%;
+  top: -1%;
+} */
+
+/* header */
+header {
+  position: relative;
+  /* visibility: hidden; */
+}
+/* #bg-img4 {
+  width: 30%;
+  border: 1px solid;
 }
 #bg-img4 img {
   width: 100%;
-}
-#bg-img4 {
-  width: 30%;
-}
+} */
 
 .header-top {
   width: 90%;
@@ -160,7 +160,10 @@ footer {
 .header-nav a:hover, .header-nav a:focus {
   border-bottom: 1px solid var(--btn-blue);
 }
-.header-profile a {
+.caret-down {
+  cursor: pointer;
+}
+.header-profile #view {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -168,13 +171,38 @@ footer {
   padding-block: 0.3em;
   padding-inline: 0.3em;
 }
-.header-profile a>div {
+.header-profile #view>div {
   display: flex;
   align-items: center;
 }
-.header-profile a:hover, .header-profile a:focus {
+.header-profile .profile-icon:hover, .header-profile .profile-icon:focus {
   border-bottom: 1px solid var(--btn-blue);
 }
+.header-profile {
+  position: relative;
+}
+
+.header-profile #toggleCard {
+  position: absolute;
+  border: 1px solid inherit;
+  width: 70%;
+  margin-inline-start: 30%;
+  display: none;
+}
+#toggleCard a {
+  display: block;
+  border: 1px solid;
+  padding-block: 0.2em;
+  padding-inline: 0.5em;
+  background: var(--btn-blue);
+  color: var(--light-text);
+}
+#toggleCard a:hover {
+  background: var(--hover-blue);
+}
+
+
+
 .mid {
   width: 90%;
   margin-inline: auto;
