@@ -65,7 +65,7 @@ body {
 header {
   padding-block-end: 1.5em;
   min-height: 100vh;
-  background: linear-gradient(175deg, #FFFFFF 12.92%, #94AFF4 102.5%);
+  background: linear-gradient(to bottom, #FFFFFF, #94AFF4);
 }
 /* 180deg, #FFFFFF 52.92%, #94AFF4 102.5%  */
 input[type="submit"] {
@@ -207,9 +207,6 @@ header {
 #toggleCard a:hover {
   background: var(--hover-blue);
 }
-
-
-
 .mid {
   width: 90%;
   margin-inline: auto;
@@ -266,7 +263,8 @@ header {
 /* brands */
 article {
   width: 100%;
-  background: var(--pry-color);
+  background: rgb(164,187,245);
+  background: #94AFF4;
   padding-block: 2.5em 3em;
 }
 .brands {
@@ -286,74 +284,20 @@ article {
 .brands .br-logo {
   width: 35%;
   margin-inline: auto;
+  display: flex;
+  align-items: flex-start;
 }
 .brands p {
   text-align: center;
 }
 
 
-
-
-
-
-
-
-/* footer */
-.footer-container {
-  width: 90%;
-  margin-inline: auto;
-  font-size: 0.85em;
-  font-weight: 400;
-  padding-block: 2em;
-}
-
-.footer-bar {
-  width: 100%;
-  margin-block-end: 2.5em;
-}
-.footer_msg {
-  width: 90%;
-  margin-inline: auto;
-  background: #203876;
-  padding-block: 1em;
-  padding-inline: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 0.4em;
-  background-image: url("images/Union\ \(4\).png");
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-position-y: 0%;
-  background-size: 6em;
-}
-.msg-text {
-  width: 50%;
-}
-.msg-nav {
-  width: 30%;
-  display: flex;
-  justify-content: flex-end;
-  gap: 2em;
-}
-.msg-nav a {
-  padding-block: 0.5em;
-  padding-inline: 1.5em;
-  border-radius: 0.4em;
-}
-.msg-nav a:first-child {
-  background: var(--btn-blue);
-  color: var(--light-text);
-}
-.msg-nav a:last-child {
-  background: var(--btn-white);
-  color: var(--dark-text);
-  border: 1px groove;
-  border-color: var(--btn-white);
-}
+/* main */
 .popular {
-  padding-inline: 2em;
+  padding-inline: 3.7em;
+  padding-block-start: 2em;
   margin-block-end: 3.5em;
+  background: var(--pry-color);
 }
 .popular-text {
   margin-block-end: 1em;
@@ -390,13 +334,16 @@ article {
   margin-block-end: 1em;
 }
 .product-card {
-  border-radius: 0.4em;
+  border-radius: 8px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-  background: var(--gradient-color);
+  background: var(--pry-color);
+}
+.popular .product-card {
+  background: var(--pry-color);
 }
 .product-card:hover {
   transform: scale(1.05,1.05);
-  background: #D9E2FB;
+  background: #94AFF4;
 }
 hr {
   border: 0.1px solid var(--pry-color);
@@ -404,8 +351,17 @@ hr {
 }
 .phone-img {
   width: 100%;
-  aspect-ratio: 1;
-  border-radius: 0.4em 0.4em 0 0;
+  /* aspect-ratio: 1; */
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: center;
+  background: #FFFFFF;
+}
+.phone-img img {
+  width: 100%;
+}
+.img {
+  width: 70%;
 }
 .phone-txt {
   padding-block: 1em 0.2em;
@@ -461,9 +417,19 @@ hr {
 }
 .new-products, .trending {
   background: #D9E2FB;
-  padding-inline: 2em;
+  padding-inline: 3.7em;
+  margin-inline: auto;
   padding-block-start: 1em;
   padding-block-end: 3.5em;
+}
+.new-products .product-card:hover, .trending .product-card:hover {
+  background: #94AFF4;
+}
+.new-products {
+  background: linear-gradient(to bottom, var(--pry-color), #94AFF4);
+}
+.trending {
+  background: linear-gradient(to top, var(--pry-color), #94AFF4);
 }
 .new-products .product-card, .trending .product-card {
   background: var(--pry-color);
@@ -473,19 +439,18 @@ hr {
 }
 
 
-
 /* display cards */
 .display-cards {
   position: relative;
   padding-inline: 2em;
-  background: #D9E2FB;
+  background: var(--pry-color);
   height: 25em;
   padding-block-end: 3em;
 }
 .back-card {
   width: 70%;
   display: flex;
-  background: #D9E2FB;
+  background: var(--pry-color);
   border-radius: 0.4em;
   margin-inline: 10%;
 }
@@ -511,7 +476,7 @@ hr {
   top: 13%;
   bottom: 5%;
   z-index: 100;
-  background: #D9E2FB;
+  background: var(--pry-color);
 }
 .fr-card-img1{
   width: 20%;
@@ -542,7 +507,7 @@ hr {
   z-index: 500;
   position: absolute;
   padding: 1em;
-  background: #D9E2FB;
+  background: var(--pry-color);
   border-radius: 0.4em;
   bottom: 10%;
 }
@@ -564,15 +529,67 @@ hr {
 }
 
 
-
-
-
-
 /* footer */
+footer {
+  margin-top: 3em;
+}
+.footer-container {
+  width: 90%;
+  margin-inline: auto;
+  font-size: 0.95em;
+  font-weight: 400;
+  padding-block: 3em;
+}
+.footer-bar {
+  width: 100%;
+  margin-block-end: 2.5em;
+}
+.footer_msg {
+  width: 90%;
+  margin-inline: auto;
+  background: #203876;
+  padding-block: 1em;
+  padding-inline: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.4em;
+  background-image: url("images/Union\ \(4\).png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 0%;
+  background-size: 6em;
+}
+.msg-text {
+  width: 50%;
+}
+.msg-nav {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+}
+.msg-nav a {
+  padding-block: 0.5em;
+  padding-inline: 1.5em;
+  border-radius: 0.4em;
+}
+.msg-nav a:first-child {
+  background: var(--btn-blue);
+  color: var(--light-text);
+}
+.msg-nav a:last-child {
+  background: var(--btn-white);
+  color: var(--dark-text);
+  border: 1px groove;
+  border-color: var(--btn-white);
+}
 .footer-body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  width: 90%;
+  margin-inline: auto;
 }
 .footer-container a {
   text-decoration: none;
