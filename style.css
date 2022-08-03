@@ -66,9 +66,9 @@ header {
   min-height: 100vh;
   /* background: linear-gradient(to bottom, #FFFFFF, #94AFF4); */
   background-image: url("Hero/SemicircleBig.png"), url('Hero/Semicircle\ 2small.png'), url('Hero/Blur\ Ellipse\ 9Boys\ head.png'), url('/Hero/Blur\ Ellipse\ 10Top\ Left\ corner.png') ,linear-gradient(to bottom, #FFFFFF, #94AFF4);
-  background-position: 33% 0%, 0% 230%, 98% -20%, top left;
+  background-position: 33% 0%, 0% 130%, 98% -20%, top left;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 25em, 15em, 25em, 15em, 100%;
+  background-size: 25em, 7.5em, 25em, 15em, 100%;
 }
 /* 180deg, #FFFFFF 52.92%, #94AFF4 102.5%  */
 input[type="submit"] {
@@ -236,9 +236,12 @@ footer {
 /* brands */
 article {
   width: 100%;
-  background: rgb(164,187,245);
   background: #94AFF4;
   padding-block: 2.5em 3em;
+  background-image: url('Hero/Semicircle\ 2small.png');
+  background-position: 0% 180%;
+  background-repeat: no-repeat;
+  background-size: 7.5em;
 }
 .brands {
   width: 60%;
