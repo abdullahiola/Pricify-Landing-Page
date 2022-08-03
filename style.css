@@ -65,7 +65,7 @@ header {
   padding-block-end: 1.5em;
   min-height: 100vh;
   /* background: linear-gradient(to bottom, #FFFFFF, #94AFF4); */
-  background-image: url("/Hero/SemicircleBig.png"), url('/Hero/Semicircle\ 2small.png'), url('/Hero/Blur\ Ellipse\ 9Boys\ head.png'), url('/Hero/Blur\ Ellipse\ 10Top\ Left\ corner.png') ,linear-gradient(to bottom, #FFFFFF, #94AFF4);
+  background-image: url("Hero/SemicircleBig.png"), url('Hero/Semicircle\ 2small.png'), url('Hero/Blur\ Ellipse\ 9Boys\ head.png'), url('/Hero/Blur\ Ellipse\ 10Top\ Left\ corner.png') ,linear-gradient(to bottom, #FFFFFF, #94AFF4);
   background-position: 33% 0%, 0% 230%, 98% -20%, top left;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 25em, 15em, 25em, 15em, 100%;
