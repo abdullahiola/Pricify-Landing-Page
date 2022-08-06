@@ -57,7 +57,7 @@ body {
   position: relative;
   font-family: var(--font-family);
   color: #1E1E1E;
-  background: var(--pry-color);
+  background: #efefef;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -65,7 +65,7 @@ header {
   position: sticky;
   top: 0;
   box-shadow:  0px 0.2px 10px 0.1px rgba(15, 15, 15, 0.2);
-  background: var(--pry-color);
+  background: #efefef;
   z-index: 100;
 }
 footer {
@@ -161,6 +161,7 @@ footer {
   border: 2px solid rgba(0,0,0,0);
   padding-block: 0.3em;
   padding-inline: 0.3em;
+  cursor: pointer;
 }
 .profile-icon #view>div {
   display: flex;
@@ -238,19 +239,31 @@ footer {
   padding: 0.4em;
   background: inherit;
   border: 1px solid grey;
-  font-weight: 200;
+  font-weight: 500;
 }
 .details input[type="password"] {
   padding: 0.4em;
   background: inherit;
   border: 1px solid grey;
+  font-weight: 500;
+}
+.details input[type="password"]::placeholder {
+  font-weight: 200;
+}
+.details input[type="email"]::placeholder {
+  font-weight: 200;
+}
+.details input[type="text"]::placeholder {
   font-weight: 200;
 }
 .details input[type="text"] {
   padding: 0.4em;
   background: inherit;
   border: 1px solid grey;
-  font-weight: 200;
+  font-weight: 500;
+}
+.details input:hover {
+  border: 2px solid var(--btn-blue);
 }
 .ter-action {
   display: flex;

@@ -18,7 +18,7 @@
 
 
 $('document').ready(function() {
-  $('#drop-down').click(function() {
+  $('#view').click(function() {
     $('#toggleCard').slideToggle(300);
   });
 })
