@@ -199,8 +199,7 @@ header {
 .header-profile #toggleCard {
   position: absolute;
   border: 1px solid inherit;
-  width: 70%;
-  margin-inline-start: 30%;
+  width: 100%;
   margin-block-start: 0.5em;
   display: none;
 }
